@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+    <title>UTP - Desarrollo Web</title>
+    </head>
+<body>
+    <section id = "Home"></section>
+    <!--Esta es la parte de todo el contenido -->
+    <header>
+        <h1>Universidad Tecnológica de Panamá</h1>
+        <a href="#Form"> Ir al Formulario</a>
+        <h2>Introducción al Desarrollo Web</h2>
+        <img src="img/img2.jpg" width="512" height="256">
+        <p>El desarrollo web es el conjunto de procesos técnicos que hacen posible que una web o aplicación exista, 
+        funcione correctamente y evolucione. Incluye desde la parte visible que ve el usuario hasta la lógica interna 
+        que gestiona datos, formularios, usuarios o integraciones con otros sistemas.</p>
+    </header>
+    <section class = "pagina-web">
+        <h3>¿Qué es una Página Web?</h3>
+        <img src="img/img1.jpg" width="512" height="256">
+        <P>Una página web es un documento digital que se muestra en un navegador de internet (como Chrome, Safari o Edge) 
+        y que combina texto, imágenes, videos y elementos interactivos.</P>
+        <h3>¿Cómo Funcionan?</h3>
+        <img src="img/img3.jpg" width="512" height="256">
+        <p></p>El funcionamiento de una pagina web esta estrechamente relacionado con una dirección web, cuando escribes en tu navegador 
+        por ejemplo; (www.UTP.com), se activa una serie de procesos tecnológicos que permiten mostrar esa página en tu pantalla.</p>
+        <h3>Tipos de Página Web</h3>
+        <p>Hay varios Tipos de sitios y sitios web, cada uno con un objetivo diferente para empresas, creadores y negocios.</p>
+        <ul>
+            <b><li>Páginas web Estáticas</li></b>
+            <p>Muestran el mismo contenido exactamente igual a todos los visitantes. 
+                Sus archivos (HTML, CSS y JavaScript) están previamente construidos y 
+                el servidor se limita a entregarlos tal cual están.</p>
+            <b><li>Páginas web Dinámicas</li></b>
+            <p>Generan el contenido en tiempo real utilizando bases de datos y lenguajes de programación del lado del servidor (como PHP, Python, Node.js o Java). 
+                Cambian según la hora, la ubicación, el usuario o la interacción.</p>
+        </ul>
+        <h3>Diferencia entre una Aplicación web y Página Web</h3>
+        <p>La principal diferencia es que una página web sirve principalmente para mostrar información de forma estática o de lectura 
+            (como un documento HTML), mientras que una aplicación web (web app) es un software interactivo que permite al usuario realizar
+             tareas y procesar datos en tiempo real a través del navegador.</p>
+               <!--esta es la parte de video e audio -->
+             <h4>Más información Acerca</h4>
+             <ul>
+                <li> Video Explicativo</li>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/okVnuGfvRyA?si=fWjvouL9y8-Upomu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>
+                Puedes ver este divertido video haciendo clic en 
+                <a href="https://www.youtube.com/watch?v=okVnuGfvRyA" target="_blank">el video</a>.
+                </p>
+                <li> Audio Explicativo</li>
+                <div style="width: 500px;"><iframe src="https://audio.com/embed/v2/audio/1831683561484158?theme=dark&layout=fixed&cover=true&footer=true&author=true&watermark=true" style="display:block; border-radius: 1px; border: none; height: 235px; width: 500px;" loading="lazy" data-audiocom-embed></iframe><a href='https://audio.com/alexa-garcia' target="_blank" style="text-align: center; display: block; color: #A4ABB6; font-size: 12px; font-family: sans-serif; line-height: 16px; margin-top: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">@alexa-garcia</a></div><script src="https://audio.com/embed.js" async></script>
+                <li> Enlace para mas Información</li>
+                <a href="https://es.wikipedia.org/wiki/Desarrollo_web">Visitar sitio web</a>
+                <li> Correo </li>
+                <a href="mailto:alonso.gonzalez2@utp.ac.pa">Enviar correo electrónico</a>
+             </ul>      
+    </section>
+    <!--Aqui comienza el formulario -->
+    <section id = "Form">
+        <form action= "/ir al formulario"> 
+            <h3>Formulario</h3>
+            <div> <!--aqui para el nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <br>  <!--aqui para apellido -->
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <br> <!--aqui para contraseña -->
+        <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br> <!--aqui para correo  -->
+        <div>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+        <br> <!--Aqui para elegir la fecha de nacimiento -->
+        <div>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        </div>
+        <br> <!--aqui para cedula -->
+        <div>
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" required>
+        </div>
+        <br> <!--aqui para la modalidad -->
+            <legend>Modalidad</legend>
+            
+            <input type="radio" id="presencial" name="modalidad" value="presencial" checked>
+            <label for="presencial">Presencial</label>
+            
+            <input type="radio" id="virtual" name="modalidad" value="virtual">
+            <label for="virtual">Virtual</label>
+        <br> <!--aqui para comentarios -->
+        <br>
+        <div>
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Escribe tus comentarios aquí..."></textarea>
+        </div>
+        <br> <!--aqui los botones de enviar y resetear -->
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>
+        </div>
+        </form>
+    </section>
+    <br>
+    <!--Aqui comienza la tabla explicativa -->
+        <h3>La Tabla</h3>
+    <section>
+        <table border="1">
+    <thead> <!--aqui para los titulos de las columnas -->
+        <tr>
+            <th>Tipo de Página</th>
+            <th>Descripción</th>
+            <th>Ejemplo Común</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>E-commerce (Tienda en línea)</td>
+            <td>Sitio web diseñado para comprar y vender productos o servicios digitalmente.</td>
+            <td>Amazon, Shopify, Mercado Libre</td>
+        </tr>
+        <tr>
+            <td>Landing Page (Página de aterrizaje)</td>
+            <td>Página web de una sola sección enfocada en convertir visitantes en clientes.</td>
+            <td>Páginas de registro a eventos o descarga de apps</td>
+        </tr>
+         <tr>
+            <td>Sitio Corporativo / Institucional</td>
+            <td>Página que presenta la información, valores, servicios y contacto de una empresa o marca.</td>
+            <td>Web oficial de Apple, Coca-Cola o una clínica local</td>
+        </tr>
+    </tbody>
+</table>
+    </section>
+    <footer> 
+        <a href="#Home"> Ir al Home</a>
+    </footer>
+</body>
+</html>
